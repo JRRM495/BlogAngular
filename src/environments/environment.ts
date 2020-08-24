@@ -3,6 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  url: "http://blog2-env.eba-23tqkp28.us-east-2.elasticbeanstalk.com",
   production: false
 };
 
