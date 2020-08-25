@@ -7,13 +7,16 @@ import {HomeComponent} from 'src/app/components/home/home.component';
 import {PostComponent} from 'src/app/components/post/post.component';
 import {AddPostComponent} from 'src/app/components/add-post/add-post.component';
 import { AuthGuard } from './auth.guard';
+import { LogGuestComponent} from 'src/app/components/log-guest/log-guest.component';
 const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register-success', component: RegSuccessComponent},
   {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
   {path: 'post/:id', component: PostComponent},
-  {path: 'addpost', component: AddPostComponent, canActivate:[AuthGuard]}
+  {path: 'addpost', component: AddPostComponent, canActivate:[AuthGuard]},
+  {path: 'guest', component: LogGuestComponent}
 ];
 
 @NgModule({

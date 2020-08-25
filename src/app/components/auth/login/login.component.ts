@@ -16,8 +16,8 @@ export class LoginComponent implements OnInit {
     private router: Router
   ) { 
     this.loginForm = this.formBuilder.group({
-      username: '',
-      password: ''
+      username: 'Guest',
+      password: 'Guest'
  
     });
 
@@ -37,9 +37,12 @@ export class LoginComponent implements OnInit {
 
     this.authService.login(loginObject).subscribe(data => {
       if (data) {
+        alert("Thanks for logging in.")
         console.log('login success');
         this.router.navigateByUrl('/home');
       } else {
+        alert("Sorry, those credentials were incorrect.")
+        this.router.navigateByUrl('/home');
         console.log('Login failed');
       }
     });

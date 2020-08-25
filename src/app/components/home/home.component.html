@@ -4,9 +4,9 @@
         <div class="blogpost">
           <h3><a href="/post/{{post.id}}" class="blog-title">{{post.title}}</a></h3>
           <div>
-            <i class="fas fa-user"></i> Author: <p>{{post.username}}</p>
+            <i class="fas fa-user h3"></i> by: <p class="h3">{{post.username}}</p>
           </div>
-          <p [innerHTML]="post.content"></p>
+          <p [innerHTML]="post.content" class="lead"></p>
           <div>
           </div>
           <hr>

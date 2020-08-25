@@ -16,6 +16,7 @@ import { AddPostComponent } from './components/add-post/add-post.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
 import {HttpClientInterceptor} from './http-client-interceptor';
+import { LogGuestComponent } from './components/log-guest/log-guest.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {HttpClientInterceptor} from './http-client-interceptor';
     LoginComponent,
     HomeComponent,
     PostComponent,
-    AddPostComponent
+    AddPostComponent,
+    LogGuestComponent
   ],
   imports: [
     BrowserModule,
