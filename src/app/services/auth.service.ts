@@ -14,8 +14,8 @@ import {Router} from '@angular/router';
   providedIn: 'root'
 })
 export class AuthService {
-  registerURL = "https://blog2-env.eba-23tqkp28.us-east-2.elasticbeanstalk.com + '/api/auth/signup';
-  loginURL = "https://blog2-env.eba-23tqkp28.us-east-2.elasticbeanstalk.com + '/api/auth/login';
+  registerURL = environment.url + '/api/auth/signup';
+  loginURL = environment.url + '/api/auth/login';
   constructor(private http: HttpClient,
    private router: Router) { }
 

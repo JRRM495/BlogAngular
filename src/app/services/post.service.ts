@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class PostService {
   url = environment.url + '/api/posts';
-  addposturl ='https://blog2-env.eba-23tqkp28.us-east-2.elasticbeanstalk.com/api/posts/create';
+  addposturl ='https://gentle-scrubland-80727.herokuapp.com/api/posts/create';
   constructor(private http: HttpClient) { }
 
   addPost(postObject: PostObject){
